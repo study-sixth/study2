@@ -1,0 +1,278 @@
+/* 上方菜单栏的无缝镶接 */
+body , ul, li{
+    margin: 0;
+    padding: 0;
+}
+/* 滚动滑轮长度 */
+body{
+    height: 2500px;
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",Sans-serif;
+}
+/* 取消ul标签之前所存在的.点 */
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* 上方菜单栏的背景颜色和高度 */
+.topbar{
+    /* border: 2px solid black; */
+    background-color:black;
+    height: 40px;
+}
+/* 整个上方菜单栏的宽度 */
+.container{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    width: 1100px;
+}
+.container::before , .container::after{
+    contain: "";
+    display: table;
+}
+.container::after{
+    clear: both;
+}
+/* 字体颜色 */
+.topbar a{
+    color: white;
+    font-size: 12px;
+}
+/* 当鼠标放在字上时的颜色 */
+.topbar a:hover{
+    color:red;
+}
+.topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+.topbar-nav span{
+    font-size: 12px;
+    color:black;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+.topbar-info,.topbar-cart{
+    float:right;
+    height: 40px;
+    line-height: 40px;
+}
+.topbar-cart a {
+    display: block;/* 设置块元素*/
+    height: 40px;
+    line-height: 40px;
+    text-align: center;/* 文字居中 */
+    width: 120px;
+    background-color:black;
+}
+.topbar-cart a:hover{
+    background-color: white;
+    color: red;
+}
+.topbar-cart span{
+    margin-left: -4px;
+    font-size: 12px; 
+}
+.topbar-info a{
+    float: left;
+    padding: 0 5px;
+    line-height: 40px;
+    height: 40px;
+}
+.topbar-info span{
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color:black;
+    line-height: 40px;
+}
+
+.header{
+    height: 100px;
+}
+.header-logo{
+    /* 设置浮动 */
+    float: left;
+    width: 62px;
+    height: 55px;
+    margin-top: 22px;
+    /* border: 2px solid black; */
+}
+.header-logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url(../images/chihuo1.png) no-repeat 50% 50%;
+}
+.header-logo a.lr{
+    text-align: left;
+    text-indent: -9992em;
+}
+.header-nav{
+    float: left;
+    width: 720px;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+.header-nav .nav-list{
+    width: 820px;
+    height: 88px;
+    font-size: 16px;
+    padding: 12px 0 0 30px;
+}
+.header-nav .nav-list .nav-them{
+    float: left;
+    width: 80px;
+    padding: 0 8px 0 0;
+}
+.header-nav .nav-list .nav-them a{
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: darkslategray;
+}
+/* 浮动ul中的文字——变为横向 */
+.header-nav .nav-list .nav-item{
+    float: left;
+}
+.header-nav .nav-list .nav-item a{
+    display: block;
+    padding: 26px 10px 38px;
+    color: black;
+}
+.header-nav .nav-list .nav-item a:hover{
+    color: red;
+}
+.header-search{
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+    /* border: 2px solid black; */
+}
+.header-search .search-from{
+    position: relative;
+    display: block;
+    width: 296px;
+    height: 50px;
+}
+.header-search .search-from .search-text{
+    position: absolute;
+    top: 0;
+    right: 52px;
+    display: block;
+    width: 245px;
+    height: 50px;
+    line-height: 50px;
+    border:  1px solid #e0e0e0;
+    outline: 0;
+}
+.header-search .search-from .search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 52px;
+    height: 50px;
+    border:  1px solid #e0e0e0;
+    font-size: 20px;
+    line-height: 24px;
+    background: white;
+    color: black;
+    outline: 0;
+}
+.header-search .search-from .search-btn:hover{
+    background-color: white;
+    color: red;
+}
+
+.seckill-head{
+    margin-top: 19px;
+    height: 400px;
+    background: url(../images/chihuo23.jpg) no-repeat 50% 0;
+}
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+div.categoryPageDiv{
+    max-width: 1013px;
+    margin: 10px auto;
+}
+div.categoryProducts{
+    padding: 0px 20px 40px 20px;
+}
+div.productUnit{
+    width: 225px;
+    height: 338px;
+    border: 3px solid #fff;
+    background-color: white;
+    margin: 12px 5px;
+    float: left;
+}
+div.productUnit:hover{
+    border:3px solid #C40000;
+}
+div.productUnitFrame{
+    border:1px solid #eee;
+    height:100%;
+}
+div.productUnitFrame:hover{
+    border:1px solid #C40000;
+}
+div.productUnit img.productImage{
+    width: 100%;
+    height: 190px;
+}
+div.productUnit span.productPrice{
+    font-size: 20px;
+    color: #CC0000;
+    display: block;
+    padding-left: 4px;
+}
+div.productUnit a.productLink{
+    margin: 10px 0px;
+    color: #333333;
+    display: block;
+    height:34px;
+}
+div.productUnit a.productLink:hover{
+    text-decoration: underline;
+    color: #C40000;
+}
+
+div.productUnit div.productInfo{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #EEEEEE;
+    color:#999999;
+}
+div.productUnit span.productDealNumber{
+    font-weight: bold;
+    color: #B57C5B;
+}
+div.productUnit span.productReview{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #EEEEEE;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #EEEEEE;
+}
+div.productUnit span.productReviewNumber{
+    font-weight: bold;
+    color: #3388BB;
+}
+div.productUnit span.monthDeal, div.productUnit span.productReview{
+    display: inline-block;
+    width: 90px;
+    height:29px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+div.productUnit span.wangwang{
+    padding-left: 3px;
+}
