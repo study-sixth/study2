@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en"><!--文档中html部分的开始，让浏览器得知自己处理的内容是html,lang="en"部分被表示让Google浏览器自动翻译成英文编码的-->
+<head><!--头元素   （提供有关文档内容和标注信息的）-->
+	<meta charset="UTF-8"><!--编码-->
+	<title>刘裕他爹</title><!--标题-->
+</head>
+<body>
+	<h1>刘裕他爹爹</h1><!--一级标题-->
+		<a href="https://www.bilibili.com/video/av5862916/" target="_blank"> 刘裕他爹1 </a><!--target后面标签_blank可以从新建立一个页面-->
+		<a href="https://www.bilibili.com/video/av5862916/" target="_self"> 刘裕他爹2 </a><!--target后面标签_self就在该页面跳转到所指定链接-->
+		<b>刘裕他爹爹</b><!--粗体-->
+		<em>刘裕他爹爹</em><!--斜体-->
+		<u>刘裕他爹爹</u><!--下划线-->
+		<s>刘裕他爹爹</s><!--删除线-->
+	<h1>表格</h1>
+	<table border=“2px” align="center">
+		<thead><!-表头->
+			<tr>
+				<th>用户</th><!--th标签区别于td标签，可以用于表格首部-->
+				<th>性别</th>
+				<th>年龄</th>
+			</tr>
+		</thead>
+		<tbody><!-表体->
+			<tr>
+				<td>刘裕他爹爹</td>
+				<td>男</td>
+				<td>123</td>
+			</tr>
+			<tr>
+				<td>刘裕他爹爹1</td>
+				<td>男</td>
+				<td>1234</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>用户</td>
+				<td>性别</td>
+				<td>年龄</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+	<br><!--换行符-->
+	<h2>不规则表格</h2>
+		<table border="1px" align="center">
+		<tr>
+			<th rowspan="2">aaaa</th><!--合并列单元格-->
+			<th>aaaa</th>
+			<th>aaaa</th>
+			<th>aaaa</th>
+		</tr>
+		<tr>
+			
+			<td colspan="2">aaaa</td><!--colspan hebing 合并两个行单元格-->
+			
+			<td>aaaa</td>
+		</tr>
+		<tr>
+			<td>aaaa</td>
+			<td>aaaa</td>
+			<td>aaaa</td>
+			<td>aaaa</td>
+		</tr>
+		</table>
+		
+<h1>列表</h1>
+<ol type="i"><!--（有序）序号的类别-->
+	<li>刘裕他爹爹</li>
+	<li>刘裕他爹爹2</li>
+	<li>刘裕他爹爹3</li>
+	<li>刘裕他爹爹4</li>
+</ol>
+<ol reversed><!--降序-->
+	<li>刘裕他爹爹</li>
+	<li>刘裕他爹爹2</li>
+	<li>刘裕他爹爹3</li>
+	<li>刘裕他爹爹4</li>
+</ol>
+<ul><!--ul表示无需列表-->
+<li>刘裕他爹爹</li>
+<li>刘裕他爹爹2</li>
+<li>刘裕他爹爹3</li>
+<li>刘裕他爹爹4</li>
+<li>刘裕他爹爹5</li>
+</ul>
+
+<h1>表单（获取用户输入的手段！）</h1>
+<form>
+	<input type="text"><!--不写type 就默认为text属性-->
+	<input type="text" value="刘裕他爹爹"><!--默认填充所写字符，输入后不会消失，占用文本框内的字符-->
+	<input type="text" placeholder="刘裕他爹爹"><!--默认填充所写字符，但是输入后会消失，不占用文本框表内的字符-->
+	<input type="text" placeholder="刘裕他爹爹" maxlength="8"><!--最大能输入的字符长度-->
+	<br><br>
+	<input type="text" placeholder="刘裕他爹爹" size="50" ><!--文本框长度-->
+	<br>
+	<input type="text" placeholder="刘裕他爹爹" readonly ><!--只能读，不能写-->
+	<input type="password" placeholder="刘裕他爹爹的密码"  >
+	<br><br>
+	<textarea ROWS="20" COL="20"><!--文本区域-->
+	啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊 ASFVBD  EVH JWEBKBEJRB
+	</textarea >
+	
+</form>
+<h2>表单2</h2>
+<form>
+<input type="button" value="按钮">
+<br>
+<button>按钮</button><!--和JavaScript合作并且作为绑定事件的-->
+<br>
+<input type="submit" value="提交"><!--提交表单-->
+<br>
+<input type="range" min="-100" max="100" step="50" value="50">
+<br>
+<input type="numble" min="-100" max="100" value="0">
+<br><br><br>
+<input type="checkbox">刘裕他爹爹
+<input type="radio" name="a" checked>刘裕他爹爹1 <!--多个按钮时，检测是否至少有一个被点击选中-->
+<input type="radio" name="a">刘裕他爹爹2
+<input type="radio" name="a">刘裕他爹爹3
+<br><br>
+你最喜欢打的人是谁？
+<br><br>
+<select>
+	<option>刘裕1</option>
+	<option>刘裕2</option>
+	<option>刘裕3</option>
+</select>
+	
+<input type="text" list="datalist1">
+<datalist id="datalist1">
+	<option>刘裕1</option>
+	<option>刘裕2</option>
+	<option>刘裕3</option>
+</datalist>
+
+
+</form>
+
+<h2>表单3</h2>
+<form>
+	<input type="email">
+	<input type="tel">
+	<input type="url">
+	<br><br><br><br>
+	<input type="date">
+	<br><br><br><br>
+	<input type="color">
+	<br><br>
+	<input type="search">
+	<br>
+	<input type="hidden" value="123">
+	<br><br>
+	<input type="image" src="" width="80px">
+	<br><br><br><br><br><br><br><br>
+	<input type="file" multiple><!--可以上传多个文件-->
+</form>
+	
+</body>
+</html>
